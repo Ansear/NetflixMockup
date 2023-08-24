@@ -24,7 +24,6 @@
         {
             "title":"Essential",
             "price":"$4.15",
-            "time":"/mo",
             "texto":[
                 "10 users included",
                 "2 GB of storage",
@@ -36,7 +35,6 @@
         {
             "title":"Standar",
             "price":"$6.60",
-            "time":"/mo",
             "texto":[
                 "20 users included",
                 "10 GB of storage",
@@ -48,7 +46,6 @@
         {
             "title":"Premium",
             "price":"$9.55",
-            "time":"/mo",
             "texto":[
                 "30 users included",
                 "10 GB of storage",
@@ -57,5 +54,33 @@
             ],
             "button":"Get started"
         }
-    ]
+    ],
+    "section3":{
+        "title":"Compare plans",
+        "items":[
+            "video quality",
+            "Resolution",
+            "Watch Netflix on your TV, computer, cell phone and tablet"
+        ],
+        "plans":[
+            {
+                "name":"Essential",
+                "quality":"Good",
+                "resolution":"720p",
+                "status":"<svg class='bi' width='24' height='24'> <use xlink:href='#check' /> </svg>"
+            },
+            {
+                "name":"Standar",
+                "quality":"Better",
+                "resolution":"1080p",
+                "status":"<svg class='bi' width='24' height='24'> <use xlink:href='#check' /> </svg>"
+            },
+            {
+                "name":"Premium",
+                "quality":"optimal",
+                "resolution":"4K+HDR",
+                "status":"<svg class='bi' width='24' height='24'> <use xlink:href='#check' /> </svg>"
+            }
+        ]
+    }
 }

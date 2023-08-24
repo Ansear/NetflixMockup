@@ -35,7 +35,7 @@ let obtener = async()=>{
                 <h4 class="my-0 fw-normal text-white">${val.title}</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title pricing-card-title">${val.price}<small class="text-body-secondary fw-light">${val.time}</small></h1>
+                <h1 class="card-title pricing-card-title">${val.price}<small class="text-body-secondary fw-light">/mo</small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
                     ${val.texto.map((valu)=>/*html*/`
                     <li>${valu}</li>
@@ -46,7 +46,49 @@ let obtener = async()=>{
         </div>
         `).join(" ")}
     `);
+
+    //Section 3
+    let TitleS3   = document.querySelector("#plans")
+    let TableHs3  = document.querySelector("#tableHead")
+    let TableB1s3 = document.querySelector("#tableBody1")
+    let TableB2s3 = document.querySelector("#tableBody2")
+    TitleS3.insertAdjacentText("beforeend",res.section3.title)
+
+    TableHs3.insertAdjacentHTML("beforeend",
+        res.section3.plans.map((plan) => /*html*/`
+        <th style="width: 22%;">${plan.name}</th>
+        `).join(" ")
+    );
+    TableB1s3.insertAdjacentHTML("beforeend",/*html*/`
+        <th class="text-start"style="width: 22%;">${res.section3.items[0]}</th>
+        ${res.section3.plans.map((plan) => /*html*/`
+        <td style="width: 22%;">${plan.quality}</td>
+        `).join(" ")}
+    `);
+
+    TableB2s3.insertAdjacentHTML("beforeend",/*html */`
+    <tr>
+    <th scope="row" class="text-start">${res.section3.items[1]}</th>
+    ${res.section3.plans.map((plan) => /*html*/`
+        <td style="width: 22%;">${plan.resolution}</td>
+        `).join(" ")}
+    </tr>
+    <tr>
+        <th scope="row" class="text-start">${res.section3.items[2]}</th>
+        ${res.section3.plans.map((plan) => /*html*/`
+        <td style="width: 22%;">${plan.status}</td>
+        `).join(" ")}
+    </tr>
+    `);
+
+
+    
+    
 }
 obtener("config");
 
 
+
+/*html*/`
+
+`
