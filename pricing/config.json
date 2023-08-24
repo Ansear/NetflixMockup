@@ -22,24 +22,40 @@
     },
     "section2":[
         {
-            "title":"../assets/brand/check.svg",
-            "precio":"$4.15",
+            "title":"Essential",
+            "price":"$4.15",
             "time":"/mo",
             "texto":[
                 "10 users included",
                 "2 GB of storage",
                 "Email support",
                 "Help center access"
-            ]
-            
+            ],
+            "button":"Get started"
         },
         {
-            "imagen":"../assets/brand/check.svg",
-            "texto":"Recommendations just for you."
+            "title":"Standar",
+            "price":"$6.60",
+            "time":"/mo",
+            "texto":[
+                "20 users included",
+                "10 GB of storage",
+                "Priority email support",
+                "Help center access"
+            ],
+            "button":"Get started"
         },
         {
-            "imagen":"../assets/brand/check.svg",
-            "texto":"Change or cancel your plan anytime."
+            "title":"Premium",
+            "price":"$9.55",
+            "time":"/mo",
+            "texto":[
+                "30 users included",
+                "10 GB of storage",
+                "Priority email support",
+                "Help center access"
+            ],
+            "button":"Get started"
         }
     ]
 }

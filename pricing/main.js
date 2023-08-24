@@ -27,9 +27,26 @@ let obtener = async()=>{
     `);   
 
     //section 2 
-    
+    let section2 = document.querySelector("#mySection2");
+    section2.insertAdjacentHTML("beforeend",/*html */`
+        ${res.section2.map((val)=>/*html */`
+        <div class="card mb-4 rounded-0 shadow-sm ">
+            <div class="card-header py-3 rounded-0">
+                <h4 class="my-0 fw-normal text-white">${val.title}</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">${val.price}<small class="text-body-secondary fw-light">${val.time}</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    ${val.texto.map((valu)=>/*html*/`
+                    <li>${valu}</li>
+                    `).join(" ")}
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary text-white">${val.button}</button>
+            </div>
+        </div>
+        `).join(" ")}
+    `);
 }
 obtener("config");
-
 
 
