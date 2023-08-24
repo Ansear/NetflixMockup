@@ -82,6 +82,9 @@ body {
 .bd-mode-toggle {
   z-index: 1500;
 }
+.card{
+  --bs-card-border-width:0
+}
 .card-header{
   background-color: #e50914;
 }

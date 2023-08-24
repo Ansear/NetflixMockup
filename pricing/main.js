@@ -28,9 +28,9 @@ let obtener = async()=>{
 
     //section 2 
     let section2 = document.querySelector("#mySection2");
-    section2.insertAdjacentHTML("beforeend",/*html */`
+    section2.insertAdjacentHTML("beforebegin",/*html */`
         ${res.section2.map((val)=>/*html */`
-        <div class="card mb-4 rounded-0 shadow-sm ">
+        <div class="card mb-4 rounded-0  ">
             <div class="card-header py-3 rounded-0">
                 <h4 class="my-0 fw-normal text-white">${val.title}</h4>
             </div>
