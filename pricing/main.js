@@ -67,23 +67,32 @@ let obtener = async()=>{
     `);
 
     TableB2s3.insertAdjacentHTML("beforeend",/*html */`
-    <tr>
-    <th scope="row" class="text-start">${res.section3.items[1]}</th>
-    ${res.section3.plans.map((plan) => /*html*/`
-        <td style="width: 22%;">${plan.resolution}</td>
-        `).join(" ")}
-    </tr>
-    <tr>
-        <th scope="row" class="text-start">${res.section3.items[2]}</th>
-        ${res.section3.plans.map((plan) => /*html*/`
-        <td style="width: 22%;">${plan.status}</td>
-        `).join(" ")}
-    </tr>
+        <tr>
+            <th scope="row" class="text-start">${res.section3.items[1]}</th>
+            ${res.section3.plans.map((plan) => /*html*/`
+                <td style="width: 22%;">${plan.resolution}</td>
+                `).join(" ")}
+        </tr>
+        <tr>
+            <th scope="row" class="text-start">${res.section3.items[2]}</th>
+            ${res.section3.plans.map((plan) => /*html*/`
+            <td style="width: 22%;">${plan.status}</td>
+            `).join(" ")}
+        </tr>
     `);
 
+    //Section 4
+    let parrafo = document.querySelector("#section4");
+    let butonS4 = document.querySelector("#section4Btn")
+    
+    parrafo.insertAdjacentHTML("beforebegin",   
+    res.section4.parrafos.map((value)=> /*html*/` <p>${value}</p>`).join(" "));
 
-    
-    
+    butonS4.insertAdjacentHTML("beforeend",/*html*/`
+        <div class="col text-center">
+            <button type="button" class="w-50 btn btn-lg btn-outline-primary text-center">${res.section4.boton}</button>
+        </div>
+    `);
 }
 obtener("config");
 
