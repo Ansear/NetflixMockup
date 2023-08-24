@@ -103,8 +103,8 @@ body {
 }
 .btn-outline-primary {
   background-color: #e50914;
-  color:white;
   border-color:#e50914;
+  color:white;
 }
 .border-primary{
   --bs-primary-rgb:229,9,20
@@ -112,4 +112,7 @@ body {
 .btn{
   --bs-btn-hover-border-color:#ad060f;
   --bs-btn-hover-bg:#ad060f;
+}
+.dropdown-menu{
+  --bs-dropdown-link-active-bg:#e50914
 }
