@@ -1,0 +1,45 @@
+{
+    "header":{
+        "logo":"../assets/brand/netflixLogo.svg",
+        "texto":"Sing In"
+    },
+    "section1":{
+        "titulo":"Choose the plan that’s right for you",
+        "parrafo":[
+            {
+                "imagen":"../assets/brand/check.svg",
+                "texto":"Watch all you want. Ad-free."
+            },
+            {
+                "imagen":"../assets/brand/check.svg",
+                "texto":"Recommendations just for you."
+            },
+            {
+                "imagen":"../assets/brand/check.svg",
+                "texto":"Change or cancel your plan anytime."
+            }
+        ]
+    },
+    "section2":[
+        {
+            "title":"../assets/brand/check.svg",
+            "precio":"$4.15",
+            "time":"/mo",
+            "texto":[
+                "10 users included",
+                "2 GB of storage",
+                "Email support",
+                "Help center access"
+            ]
+            
+        },
+        {
+            "imagen":"../assets/brand/check.svg",
+            "texto":"Recommendations just for you."
+        },
+        {
+            "imagen":"../assets/brand/check.svg",
+            "texto":"Change or cancel your plan anytime."
+        }
+    ]
+}
