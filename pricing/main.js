@@ -93,11 +93,30 @@ let obtener = async()=>{
             <button type="button" class="w-50 btn btn-lg btn-outline-primary text-center">${res.section4.boton}</button>
         </div>
     `);
+
+    //Footer
+    let footer = document.querySelector("#footer");
+    footer.insertAdjacentHTML("beforeend",/*html*/`
+    ${res.footer.map((value)=> /*html */ `
+        <div class="col-6 col-md">
+            <ul class="list-unstyled text-small">
+                ${value.map((item)=> /*html*/ `
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${item}</a></li>
+                `).join(" ")}
+            </ul>
+        </div>
+    `).join(" ")}
+    `);
 }
 obtener("config");
 
 
 
 /*html*/`
-
+<div class="col-6 col-md">
+    <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Frequent questions</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+    </ul>
+</div>
 `

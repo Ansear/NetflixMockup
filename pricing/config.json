@@ -89,5 +89,10 @@
             "Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic."
         ],
         "boton":"Following"
-    }
+    },
+    "footer":[
+        ["Help Center","Cookie preferences"],
+        ["Netflix Store","Corporate Information","Terms of Use"],
+        ["Terms of Use"]
+    ]
 }
